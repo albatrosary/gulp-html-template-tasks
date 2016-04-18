@@ -1,0 +1,27 @@
+{
+  "name": "gulp-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server --config='bs-config.json'"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Fumio SAGAWA",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "gulp": "^3.9.1",
+    "gulp-ejs": "^2.1.1",
+    "gulp-eslint": "^2.0.0",
+    "gulp-htmlmin": "^1.3.0",
+    "gulp-jscs": "^3.0.2",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-util": "^3.0.7",
+    "lite-server": "^2.2.0",
+    "require-dir": "^0.3.0"
+  }
+}
