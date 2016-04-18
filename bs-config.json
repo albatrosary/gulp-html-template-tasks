@@ -1,5 +1,10 @@
 {
   "port": 9031,
   "files": ["./dist/**/*.{html,htm,css}"],
-  "server": { "baseDir": "./dist" }
+  "server": {
+    "baseDir": "./dist",
+    "directory": true,
+    "index": "index.html"
+  },
+  "browser": ["firefox"]
 }
