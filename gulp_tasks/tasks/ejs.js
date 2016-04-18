@@ -11,6 +11,10 @@ gulp.task('ejs-build', () => {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('ejs', () => {
-  return gulp.watch("src/**/*.html", ["ejs-build"]);
+gulp.task('ejs-watch', () => {
+  return gulp
+    .watch("src/**/*.html", ["ejs-build"]);
 });
+
+gulp.task('ejs', ['ejs-build', 'ejs-watch']);
+ 
