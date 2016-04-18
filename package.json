@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm run lite",
+    "start": "concurrently \"gulp ejs\" \"npm run lite\"",
     "lite": "lite-server --config='bs-config.json'"
   },
   "keywords": [
@@ -21,6 +21,7 @@
     "gulp-jscs": "^3.0.2",
     "gulp-load-plugins": "^1.2.2",
     "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
     "lite-server": "^2.2.0",
     "require-dir": "^0.3.0"
   }

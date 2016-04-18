@@ -1,5 +1,5 @@
 {
   "port": 9031,
-  "files": ["./src/**/*.{html,htm,css}"],
-  "server": { "baseDir": "./src" }
+  "files": ["./dist/**/*.{html,htm,css}"],
+  "server": { "baseDir": "./dist" }
 }
