@@ -1,5 +1,5 @@
-var gulp = require('gulp');
-var gutil = require('gulp-util');
+const gulp = require('gulp');
+const gutil = require('gulp-util');
 
 gulp.task('default', () => {
   gutil.log('**********************');
