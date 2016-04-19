@@ -1,3 +1,3 @@
 (function () {
-  console.log('hoge!');
+  console.log('foo!');
 })();
