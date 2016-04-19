@@ -16,7 +16,7 @@ gulp.task('ejs.build', () => {
 });
 
 gulp.task('ejs.watch', () => {
-  gulp.watch("src/**/*.html", ["ejs.build"]);
+  gulp.watch("src/**/*.{html,ejs}", ["ejs.build"]);
 });
 
 gulp.task('cssmin', () => {
@@ -25,7 +25,7 @@ gulp.task('cssmin', () => {
     .pipe(sass().on('error', sass.logError))
 		.pipe(cssmin())
     .pipe(sourcemaps.write('maps'))
-		.pipe(gulp.dest('dist'));
+		.pipe(gulp.dest('dis  t'));
 });
 
 gulp.task('scss.watch', function() {
