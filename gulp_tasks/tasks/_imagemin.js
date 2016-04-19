@@ -7,7 +7,6 @@ const imageminSvgo = require('imagemin-svgo');
 
 gulp.task('pngmin', () => {
   gulp.src('src/**/*.png')
-    .pipe(watch("src/**/*.png"))
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [
@@ -19,9 +18,12 @@ gulp.task('pngmin', () => {
     .pipe(gulp.dest('dist'));
 }); 
 
+gulp.task('png.watch', function() {
+  gulp.watch('src/**/*.png', ['pngmin']);
+});
+
 gulp.task('svgmin', () => {
   gulp.src('src/**/*.svg')
-    .pipe(watch("src/**/*.svg"))
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [
@@ -33,9 +35,12 @@ gulp.task('svgmin', () => {
     .pipe(gulp.dest('dist'));
 }); 
 
+gulp.task('svg.watch', function() {
+  gulp.watch('src/**/*.svg', ['svgmin']);
+});
+
 gulp.task('jpgmin', () => {
   gulp.src('src/**/*.jpg')
-    .pipe(watch("src/**/*.jpg"))
     .pipe(imagemin({
       progressive: true,
       svgoPlugins: [
@@ -46,6 +51,11 @@ gulp.task('jpgmin', () => {
     }))
     .pipe(gulp.dest('dist'));
 }); 
+
+
+gulp.task('jpg.watch', function() {
+  gulp.watch('src/**/*.jpg', ['jpgmin']);
+});
 
 gulp.task('imagemin', ['pngmin', 'jpgmin', 'svgmin']);
 

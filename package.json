@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"gulp ejs\" \"npm run lite\"",
+    "start": "concurrently \"gulp serve\" \"npm run lite\"",
+    "build": "\"gulp build\"",
     "lite": "lite-server --config='bs-config.json'"
   },
   "keywords": [
@@ -14,6 +15,7 @@
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
     "gulp-ejs": "^2.1.1",
@@ -23,6 +25,8 @@
     "gulp-jscs": "^3.0.2",
     "gulp-jsmin": "^0.1.5",
     "gulp-load-plugins": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7",
     "gulp-watch": "^4.3.5",
     "imagemin-jpegtran": "^4.3.2",
