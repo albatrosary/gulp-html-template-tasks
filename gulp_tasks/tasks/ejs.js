@@ -11,11 +11,13 @@ gulp.task('ejs-build', () => {
     .pipe(gulp.dest('dist'))
 });
 
-gulp.task('jsmin', () => {
-  
+gulp.task('cssmin', () => {
+  return gulp.src('src/**/*.css')
+		.pipe(cssmin())
+		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('cssmin', () => {
+gulp.task('jsmin', () => {
   
 });
 
