@@ -1,1 +1,0 @@
-{"version":3,"file":"styles/main.css","sources":["styles/main.scss"],"sourcesContent":["$red: #eee;\n\nbody {\n  background-color: $red;\n}"],"mappings":"AAEA,IAAI,CAAC;EACH,gBAAgB,EAHZ,IAAI,GAIT","names":[],"sourceRoot":"/source/"}

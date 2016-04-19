@@ -25,7 +25,7 @@ gulp.task('cssmin', () => {
     .pipe(sass().on('error', sass.logError))
 		.pipe(cssmin())
     .pipe(sourcemaps.write('maps'))
-		.pipe(gulp.dest('dis  t'));
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('scss.watch', function() {
